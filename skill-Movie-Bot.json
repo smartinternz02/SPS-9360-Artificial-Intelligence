@@ -1,0 +1,986 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "language",
+      "examples": [
+        {
+          "text": "english"
+        },
+        {
+          "text": "Hindi"
+        },
+        {
+          "text": "telugu"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movie",
+      "examples": []
+    },
+    {
+      "intent": "Movies",
+      "examples": [
+        {
+          "text": "Extraction"
+        },
+        {
+          "text": "Godzilla vs Kong"
+        },
+        {
+          "text": "Mulan"
+        },
+        {
+          "text": "Retaliation"
+        },
+        {
+          "text": "Tenet"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "EngMovie",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Extraction",
+          "synonyms": [
+            "3",
+            "e"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Godzilla vs Kong",
+          "synonyms": [
+            "1",
+            "g",
+            "g vs k"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mulan",
+          "synonyms": [
+            "4",
+            "m"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Retaliation",
+          "synonyms": [
+            "5",
+            "r"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tenet",
+          "synonyms": [
+            "2",
+            "t"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "Ga",
+            "gud aftrnoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "Ge",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "Gm",
+            "Gud mrng",
+            "Mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "helloooo",
+            "Hlo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hey",
+          "synonyms": [
+            "heyy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hii"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hindimve",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Flight",
+          "synonyms": [
+            "1",
+            "f"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kagaz",
+          "synonyms": [
+            "5",
+            "k"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Roohi",
+          "synonyms": [
+            "3",
+            "r"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Big Bull",
+          "synonyms": [
+            "4",
+            "b",
+            "bb"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Unpaused",
+          "synonyms": [
+            "2",
+            "up"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "language",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "English",
+          "synonyms": [
+            "e",
+            "en",
+            "eng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hindi",
+          "synonyms": [
+            "h",
+            "hin",
+            "hn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "telugu",
+          "synonyms": [
+            "t",
+            "te",
+            "tel"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movie",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Movie",
+          "synonyms": [
+            "m",
+            "mv",
+            "mve"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "telugumve",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Miss India",
+          "synonyms": [
+            "3",
+            "m i"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ninila Ninila",
+          "synonyms": [
+            "5",
+            "n n"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Teddy",
+          "synonyms": [
+            "4",
+            "t"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "V",
+          "synonyms": [
+            "2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vakeel Saab",
+          "synonyms": [
+            "1",
+            "v s"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1617996820471",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie:Unpaused\nWatch at: Prime\nCast: Gulshan Devaiah,Sumeet Vyas,Saiyami Kher,Richa Chadda,Abhishek Banerjee,Ratna Pathak Shah,Ishwak Singh\nRating:(7/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "@hindimve:Unpaused",
+      "dialog_node": "node_10_1618015658607",
+      "previous_sibling": "node_8_1618015623528"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Roohi\nWatch at: Netflix\nCast: Rajkummar Rao, Janhvi Kapoor and Varun Sharma\nRating:(4.6/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "@hindimve:Roohi",
+      "dialog_node": "node_1_1618015708353",
+      "previous_sibling": "node_10_1618015658607"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Tenet\nWatch at: Prime\nCast: Juhan Ulfsak, Jefferson Hall, Andrew Howard, John David Washington, Dimple Kapadia    \nMovie rating: (7.5/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "@EngMovie:Tenet",
+      "dialog_node": "node_1_1618016195095",
+      "previous_sibling": "node_4_1618016108073"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Mulan\nWatch at:  Hotstar\nCast:  Yifei Liu, Gong Li, Donnie yen,Jet Li , Yoson An\nMovie rating: (5.6/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "@EngMovie:Mulan",
+      "dialog_node": "node_1_1618016250100",
+      "previous_sibling": "node_3_1618016220419"
+    },
+    {
+      "type": "standard",
+      "title": "Enter response 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which Language Movies would you like to watch??\nAvailabe languaes are:\nEnglish\nHindi\nTelugu"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@movie",
+      "dialog_node": "node_2_1617987967465",
+      "previous_sibling": "node_5_1617987961083"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Vakeel Saab\nWatch at : Theatre\nCast: Pavan Kalyan,Nivetha Thomas,Anjali,Ananya, Prakash Raj,Sruthi Haasan,Mukesh Rishi ,Dev Gill\nRating: (7.4/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "@telugumve:(Vakeel Saab)",
+      "dialog_node": "node_2_1618015152379"
+    },
+    {
+      "type": "standard",
+      "title": "Hindi",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The list of Hindi Movies available are:\n1.Flight\n2.Unpaused\n3.Roohi\n4.The Big Bull\n5.Kagaz"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@language:hindi",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1617996820471",
+      "previous_sibling": "node_8_1617996756913"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The list of English Movies available are:\n1.Godzilla vs Kong\n2.Tenet\n3.Extraction\n4.Mulan\n5.Retaliation"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@EngMovie",
+      "dialog_node": "node_3_1618016015459",
+      "previous_sibling": "node_2_1617987967465"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie:  Extraction\nWatch at : Netflix\nCast: Chris Hemsworth,  Rudhraksh Jaiswal , Randeep Hooda, Neha Mahajan ,  Rob Collins\nMovie rating: (6.7/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "@EngMovie:Extraction",
+      "dialog_node": "node_3_1618016220419",
+      "previous_sibling": "node_1_1618016195095"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Godzilla vs King Kong\nWatch at : Theatre\nCast : Rebecca Hall, ShunOguri, Alexander Skarsgard, Kyle Chandler,Ronny Chieng \nMovie rating: (6.6/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "@EngMovie:(Godzilla vs Kong)",
+      "dialog_node": "node_4_1618016108073"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please check the spelling of the movie name and Try again"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1618017272262",
+      "previous_sibling": "node_6_1618016303195"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#greeting || @greeting",
+      "dialog_node": "node_5_1617987961083",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please check the spelling of the movie name and Try again"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "anything_else",
+      "dialog_node": "node_5_1618017348638",
+      "previous_sibling": "node_9_1618015490510"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Retaliation\nWatch at:  ZEE5\nCast:  Orlando Bloom , Janet Montgomery ,           Anne Reid , Alex Ferns\nMovie rating: (5.4/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1618016015459",
+      "conditions": "@EngMovie:Retaliation",
+      "dialog_node": "node_6_1618016303195",
+      "previous_sibling": "node_1_1618016250100"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please check the spelling of the movie name and Try again"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "anything_else",
+      "dialog_node": "node_6_1618017371202",
+      "previous_sibling": "node_9_1618015780199"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: The Big Bull\nWatch at: Hotstar\nCast: Abhishek Bachchan,Hemant Shah,Nikita Dutta,Priya Patel Shah,Ileana D'Cruz\nRating:(4.9/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "@hindimve:(The Big Bull)",
+      "dialog_node": "node_7_1618015747552",
+      "previous_sibling": "node_1_1618015708353"
+    },
+    {
+      "type": "standard",
+      "title": "Telugu",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The list of Telugu Movies available are:\n1.Vakeel Saab\n2.V\n3.Miss India\n4.Teddy\n5.Ninila Ninila"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@language:telugu",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1617996756913",
+      "previous_sibling": "node_3_1618016015459"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Miss India\nWatch at: Netflix\nCast: Keerthi Suresh,Jagapathi Babu,Rajendra Prasad,Naresh,Nadiya,Naveen Chandra,Bhanu Sree Mehra,Sumanth Shailendra\nRating:( 3.3/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "@telugumve:(Miss India)",
+      "dialog_node": "node_8_1618015423397",
+      "previous_sibling": "node_9_1618015299446"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Teddy\nWatch at: Hotstar\nCast:Arya,E.B Gokulan,Sayyeshaa,Satish,Karunakaran,Sakshi Agarwal\nRating: (6.3/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "@telugumve:Teddy",
+      "dialog_node": "node_8_1618015459320",
+      "previous_sibling": "node_8_1618015423397"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie:Flight\nWatch at: Theatre\nCast: Vishal Arya, Babita Ashiwal, Shibani Bedi,Dhruvaditya Bhagwanani\nRating:(8.4/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "@hindimve:Flight",
+      "dialog_node": "node_8_1618015623528"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: V\nWatch at: Amazon Prime\nCast:Nani,Sudeer Babu,Nivetha Thomas,Aditi Rao Hydari,Vennela Kishore,Tanikela Barani,Naresh\nRating:(6.6/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "@telugumve:V",
+      "dialog_node": "node_9_1618015299446",
+      "previous_sibling": "node_2_1618015152379"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie: Ninila Ninila\nWatch at: Zee5\nCast: Ashok Selvan,Rithu Varma,Nitya Menen,Nassar,Satya,Brahmaji\nRating:(7.5/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617996756913",
+      "conditions": "@telugumve:(Ninila Ninila)",
+      "dialog_node": "node_9_1618015490510",
+      "previous_sibling": "node_8_1618015459320"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie:Kagaz\nWatch at: ZEE5\nCast: Pankaj Tripathi, Monal Gajjar, Satish Kaushik,Sandeepa Dhar, Amar Upadhyay\nRating:(7.3/10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617996820471",
+      "conditions": "@hindimve:Kagaz",
+      "dialog_node": "node_9_1618015780199",
+      "previous_sibling": "node_7_1618015747552"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:Hello",
+      "dialog_node": "response_10_1618017178463",
+      "previous_sibling": "response_9_1617996660971"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:(Good Morning)",
+      "dialog_node": "response_2_1617989234302"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:(Good Afternoon)",
+      "dialog_node": "response_4_1617989269171",
+      "previous_sibling": "response_2_1617989234302"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:Hey",
+      "dialog_node": "response_4_1618017210597",
+      "previous_sibling": "response_10_1618017178463"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:(Good Evening)",
+      "dialog_node": "response_8_1617989296338",
+      "previous_sibling": "response_4_1617989269171"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1617987967465",
+      "disabled": true,
+      "dialog_node": "response_9_1617989461560"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!! How can I help you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617987961083",
+      "conditions": "@greeting:Hi",
+      "dialog_node": "response_9_1617996660971",
+      "previous_sibling": "response_8_1617989296338"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is Movie Bot. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie Bot",
+  "language": "en",
+  "description": ""
+}
